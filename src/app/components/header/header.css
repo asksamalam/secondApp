@@ -8,3 +8,27 @@ header{
     justify-content: space-betweenss;
     font-style: italic;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span{
+        cursor: pointer;
+        &:hover{
+            color: #777;
+        }
+    }
+    
+    ul{
+        list-style-type: disc;
+        li{
+            cursor: pointer;
+            &:hover{
+                color: #777;
+            }
+        }
+    }
+}
