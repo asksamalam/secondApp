@@ -1,4 +1,8 @@
 <H2>Todo List</H2>
 @for (item of todoItems(); track item.id) { <!-- item.id is used to improve performance of for loop insteam of $index -->
-    <p>{{item.title}}</p>
+
+    <li class = "todos__items">
+        <input id = "item-{{item.id}}" type="checkbox" [value]="item.completed">
+        <label for = "item-{{item.id}}"> {{item.title}}</label>
+    </li>
 }
