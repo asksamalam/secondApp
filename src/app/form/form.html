@@ -1,0 +1,21 @@
+<p>form works!</p>
+
+<form [formGroup]="userForm" (ngSubmit)="submitForm()">
+
+  <label>Name:</label>
+  <input type="text" formControlName="name">
+
+  <br><br>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email">
+
+  <br><br>
+
+  <label>Age:</label>
+  <input type="number" formControlName="age">
+
+  <br><br>
+
+  <button type="submit">Submit</button>
+</form>

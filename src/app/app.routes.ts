@@ -14,4 +14,10 @@ export const routes: Routes = [
             return import('./todos/todos').then((m) => m.Todos)
         },
     },
+    {
+        path:'form',
+        loadComponent: () => {
+            return import('./form/form').then((m) => m.Form)
+        },
+    },
 ];
