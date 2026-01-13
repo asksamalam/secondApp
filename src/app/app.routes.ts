@@ -20,4 +20,10 @@ export const routes: Routes = [
             return import('./form/form').then((m) => m.Form)
         },
     },
+    {
+        path:'user-list',
+        loadComponent: () => {
+            return import('./user-list/user-list').then((m) => m.UserList)
+        },
+    },
 ];
